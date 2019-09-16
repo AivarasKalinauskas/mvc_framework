@@ -24,7 +24,7 @@ class Application
 
     private function _unregistered_globals()
     {
-        if(ini_set('register_globals')) {
+        if(ini_get('register_globals')) {
             $globalsArray = ['_SESSION', '_COOKIE', '_POST', '_GET', '_REQUEST', '_SERVER', '_ENV', '_FILES'];
             foreach ($globalsArray as $global) {
                 foreach ($GLOBALS[$global] as $key => $value) {
