@@ -2,6 +2,12 @@
 
 define('DEBUG', true);
 
+// Database connect information
+define('DB_NAME', 'framework');
+define('DB_USER', 'root');
+define('DB_PASSWORD', '');
+define('DB_HOST', 'localhost');
+
 // Default controller if there isn't one defined in the url
 define('DEFAULT_CONTROLLER', 'Home');
 
